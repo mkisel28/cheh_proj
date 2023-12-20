@@ -120,7 +120,7 @@ def process_message(message):
 
     # Получаем введенную ссылку
     user_input = message.text.lower()
-
+    user_input = normalize_url(user_input)
     # Проверяем наличие ссылки в списке ресурсов
     if user_input in get_resource_list():
         bot.send_message(message.chat.id, f'🔴 На дату {current_date}, ресурс {user_input} является экстремистским!')
