@@ -11,4 +11,4 @@ COPY . .
 RUN pip install --no-cache-dir pyTelegramBotAPI
 
 # Команда для запуска бота
-CMD ["python", "./your_script.py"]
+CMD ["python", "./main.py"]
