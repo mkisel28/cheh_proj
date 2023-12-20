@@ -6,7 +6,8 @@ WORKDIR /usr/src/app
 
 # Копирование файлов проекта и зависимостей в контейнер
 COPY . .
-
+COPY users.txt /data/users.txt
+COPY resources.txt /data/resources.txt
 # Установка необходимых библиотек
 RUN pip install --no-cache-dir pyTelegramBotAPI
 

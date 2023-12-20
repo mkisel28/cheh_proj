@@ -8,7 +8,7 @@ import time
 bot = telebot.TeleBot('6544599844:AAFn8631B3QGkzM_oTwf0JNdgoZw0DyvcHc')
 
 
-data_folder = '/usr/src/app/data'
+data_folder = '/data'
 
 os.makedirs(data_folder, exist_ok=True)
 
